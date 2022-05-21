@@ -1,0 +1,97 @@
+header, body {
+  font-family: Tahoma;
+  display: block;
+}
+
+h1, h2 {
+  color: #06aabf;
+  text-shadow: 2px 1px 0 #000;
+background-color:  #33ff57 ;
+}
+
+footer {
+  text-align: center;
+  text-shadow: 1px 1px 0 #000;
+  border: 1px solid #33ff57 ;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+a  {
+ background-color: green;
+ font-weight: bold;
+ color: white;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#header-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  width: 100%;
+}
+
+#nav-bar {
+background-color: green;
+text-align: center;
+position: fixed;
+width: 100%;
+padding: 4px;
+
+}
+
+<!DOCTYPE html>
+<html>
+  <head>
+<title>Registration Form</title>
+	  <link rel="stylesheet" type="text/css" href="styles.css" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <header id="header">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b1/Rick_and_Morty.svg" alt="Rick and Morty"  id="header-img"/>
+  <nav id="nav-bar">
+      <a class="nav-link" href="#home">Home</a>
+  <a class="nav-link" href="#news">News</a>
+  <a class="nav-link" href="#contact">Contact</a>
+  <a class="nav-link" href="#about">About</a>
+  </nav>
+  </header>
+  <body>
+    <h1>Rick and Morty</h1>
+<h2 id="home">Home</h2>
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+ <p><strong>Check out this  video!</strong><iframe width="420" height="315"
+src="https://www.youtube.com/watch?v=CdGKfBir7bI">
+</iframe> </p>
+<h2 id="news">News</h2>
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+<h2 id="">Contact</h2>
+<p>The Smith Residence is the home of the Smith Family - which includes Beth, Jerry, Morty, Summer, and Snuffles as well as Beth's father Rick.
+  Contact us by <a href = "mailto: abc@example.com">sending an Email</a>
+  </p>Please fill out this form with the required information
+</p>
+  <form  action="https://www.freecodecamp.com/email-submit">
+    <label>Enter Your Email: <input type="email" name="email" id="email" required /></label>
+  <input type="submit" value="Submit" />
+  </form>
+  </p>
+<h2>About</h2>
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+  </body>
+  <footer>
+    <p>
+Under the High Patronage of the <strong>Council of Ricks</strong>
+    </p>
+     <p>
+More information <a href="https://rickandmorty.fandom.com/wiki/Smith_Residence" target="_blank">here</a>
+    </p>   
+  </footer>
+</html>
