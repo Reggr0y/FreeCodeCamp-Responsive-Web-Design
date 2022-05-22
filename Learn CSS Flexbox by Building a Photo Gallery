@@ -31,6 +31,12 @@ body {
   padding: 0 4px;
 }
 
+@media (max-width: 800px) {
+  #gallery img {
+    width: 50%;
+  }
+}
+
 
 <!DOCTYPE html>
 <html>
