@@ -20,9 +20,8 @@ padding-bottom: 5px;
 }
 
 h1 {
-padding-left: 10%;
-padding-right: 5%;
 margin-top: 40px;
+text-align: center;
 }
 
 h2 {
@@ -34,6 +33,11 @@ p, label {
   font-size: 19px;
   padding: 10px;
 }
+
+form {
+background-image: url("https://preview.redd.it/p1393jl5kv141.jpg?auto=webp&s=06f3b632408d9f356d15934736a1a12be0601a4c");
+}
+
 footer {
   text-align: center;
   text-shadow: 1px 1px 0 #000;
@@ -69,6 +73,20 @@ margin-left: auto 20px ;
 #video {
   margin-left: 10%;
   margin-right: 10%;
+}
+
+#gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+#gallery img {
+  width: 50%;
+  height: 300px;
+}
 
 
 <!DOCTYPE html>
@@ -85,12 +103,13 @@ margin-left: auto 20px ;
       <a class="nav-link" href="#home">Home</a>
   <a class="nav-link" href="#news">News</a>
   <a class="nav-link" href="#contact">Contact</a>
+    <a class="nav-link" href="#season">Seasons</a>
   <a class="nav-link" href="#about">About</a>
   </nav>
   </header>
   <body>
     <img src="https://upload.wikimedia.org/wikipedia/commons/b/b1/Rick_and_Morty.svg" alt="Rick and Morty"  id="header-img"/>
-    <h1>Let'$ G€t $chwifty</h1>
+    <h1>>≠Let'$ G€t $chwifty≠<</h1>
 <h2 id="home">Home</h2>
 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
  <div><p><strong>Check out this  video!</strong></p>
@@ -102,15 +121,24 @@ src="https://www.youtube.com/watch?v=CdGKfBir7bI" id="video">
 <h2 id="contact">Contact</h2>
 <p>The Smith Residence is the home of the Smith Family - which includes Beth, Jerry, Morty, Summer, and Snuffles as well as Beth's father Rick.
   Contact us by <a href = "mailto: abc@example.com">sending an Email</a>
-  </p>Please fill out this form with the required information
-</p>
+  </p>
   <form  action="https://www.freecodecamp.com/email-submit" id="form">
   <fieldset>
-    <label>Enter Your Email: <input type="email" name="email" id="email" placeholder="Squanchy" required /></label><br>
+   <p>Please fill out this form with the required information
+</p>
+    <label>Enter Your Email: <input type="email" name="email" id="email" placeholder="Squanchy" required /></label>
   <input type="submit" value="Submit" id="submit"/>
   </fieldset>
   </form>
   </p>
+<h2 id="season">Seasons</h2>
+<div id="gallery">
+      <img src="https://mr.comingsoon.it/imgdb/serietv/serie/1505/1505.jpg" alt="season 1"/>
+      <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5154/5154500_sa.jpg;maxHeight=640;maxWidth=550" alt="season 2"/>
+      <img src="https://upload.wikimedia.org/wikipedia/en/thumb/5/52/Rick_and_Morty_season_3.png/250px-Rick_and_Morty_season_3.png" alt="season 3"/>
+      <img src="https://upload.wikimedia.org/wikipedia/en/thumb/1/17/Rick_and_Morty_season_4.jpg/250px-Rick_and_Morty_season_4.jpg" alt="season 4"/>
+      <img src="https://m.media-amazon.com/images/I/71t5hYhGOTL._SY500_.jpg"/ alt="season 5">
+    </div>
 <h2 id="about">About</h2>
 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
   </body>
