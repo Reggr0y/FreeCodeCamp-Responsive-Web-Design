@@ -3,10 +3,6 @@ header, body {
   display: block; 
 }
 
-header {
-margin-bottom: 50px;
-}
-
 body {
  background-color: #62a4ab;
  background-image: url("https://images-cdn.9gag.com/photo/aVwWV3M_700b.jpg");
@@ -26,7 +22,7 @@ padding-bottom: 5px;
 h1 {
 padding-left: 10%;
 padding-right: 5%;
-margin-top: 100px;
+margin-top: 40px;
 }
 
 h2 {
@@ -58,7 +54,7 @@ background-color:  #AAFC96 ;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  padding: 20px;
+  margin-top: 100px;
   width: 100%;
 }
 
@@ -84,7 +80,6 @@ margin-left: auto 20px ;
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <header id="header">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b1/Rick_and_Morty.svg" alt="Rick and Morty"  id="header-img"/>
   <nav id="nav-bar">
     <img src="https://www.kindpng.com/picc/m/43-437501_rick-and-morty-monsters-rick-and-morty-png.png" width="50" class="nav-img">
       <a class="nav-link" href="#home">Home</a>
@@ -94,6 +89,7 @@ margin-left: auto 20px ;
   </nav>
   </header>
   <body>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b1/Rick_and_Morty.svg" alt="Rick and Morty"  id="header-img"/>
     <h1>Let'$ G€t $chwifty</h1>
 <h2 id="home">Home</h2>
 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
@@ -127,4 +123,3 @@ More information <a href="https://rickandmorty.fandom.com/wiki/Smith_Residence" 
     </p>   
   </footer>
 </html>
-
