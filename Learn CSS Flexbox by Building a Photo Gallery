@@ -37,6 +37,11 @@ body {
   }
 }
 
+@media (max-width: 600px){
+  #gallery img {
+    width: 100%
+  }
+}
 
 <!DOCTYPE html>
 <html>
