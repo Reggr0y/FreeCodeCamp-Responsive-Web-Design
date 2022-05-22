@@ -1,0 +1,90 @@
+html {
+  font-family: Tahoma;
+  background: linear-gradient(90deg, #0d47a1, #9b49a3);
+  color: white;
+}
+
+body {
+
+}
+
+a:link {
+  color: white;
+} 
+
+a:visited {
+  color: black;
+}
+
+ul {
+  display: block;
+}
+
+#navbar {
+padding: 40px;
+width: 100%;
+font-size: 20px;
+background-image: url("https://preview.redd.it/p1393jl5kv141.jpg?auto=webp&s=06f3b632408d9f356d15934736a1a12be0601a4c");
+}
+
+#nav-link {
+color: white;
+}
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+<title>My portfolio</title>
+	  <link rel="stylesheet" type="text/css" href="styles.css" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+<body>
+  <nav id="navbar">
+      <a class="nav-link" href="#projects">Projects</a>
+      <a class="nav-link" href="#about">About</a>
+  <a class="nav-link" href="#contact">Contact</a>
+  </nav>
+
+  <div id="welcome-section">
+    <h1>Hello, my name is Greg</h1>
+  </div>
+<div id="projects">
+  <h2 id="projects">Projects</h2>
+  <div class="container">
+    <div class="projects"></div>
+    <div class="projects"></div>
+    <div class="projects">
+      <p>
+        <a href="https://codepen.io/reggr0y/pen/MWQWeKa" target="_blank">Survey Form</a>
+        <img href=""/>
+        </p>
+    </div>
+    <div class="projects">
+      <p>
+        <a href="https://codepen.io/reggr0y/pen/QWaPoPB" target="_blank">Tribute page</a>
+        <img href=""/>
+        </p>
+    </div>
+  </div>
+</div>
+<div>
+  <h2 id="about">About</h2>
+  <div>
+    <p>I have been learning coding via FreeCodeCamp in April 2022.
+      So far, I know HTML & CSS.
+      More to come. </p>
+  </div>
+</div>
+<div>
+  <h2 id="contact">Contact</h2>
+  <div>
+    <ul>
+      <li><a href="https://github.com/Reggr0y" target="_blank" id="profile-link"><img src="https://logos-world.net/wp-content/uploads/2020/11/GitHub-Logo.png" alt="Github" width="80"></a></li>
+      <li><a href="https://www.linkedin.com/in/gr%C3%A9gory-wawszyniak-dumont-83836680/" target="_blank" id="profile-link"><img src="https://www.paperlesslabacademy.com/wp-content/uploads/2017/02/linkedin-logo-transparent.png" alt="Linkedin" width="80"></a></li>
+    </ul>
+  </div>
+</div>
+</body>
+</html>
