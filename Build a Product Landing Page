@@ -88,6 +88,18 @@ margin-left: auto 20px ;
   height: 300px;
 }
 
+@media (max-width: 800px) {
+  #gallery img {
+    width: 50%;
+  }
+}
+
+@media (max-width: 600px){
+  #gallery img {
+    width: 100%
+  }
+}
+
 
 <!DOCTYPE html>
 <html>
