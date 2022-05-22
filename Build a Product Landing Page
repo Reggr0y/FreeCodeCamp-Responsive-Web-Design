@@ -9,6 +9,7 @@ margin-bottom: 50px;
 
 body {
  margin-top: 00px;
+ background-color: #62a4ab ;
 }
 
 h1, h2 {
@@ -30,6 +31,11 @@ h2 {
   padding-left: 20px;
 }
 
+p {
+  color: white;
+  font-size: 19px;
+  padding: 10px;
+}
 footer {
   text-align: center;
   text-shadow: 1px 1px 0 #000;
