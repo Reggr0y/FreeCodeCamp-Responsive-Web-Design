@@ -1,46 +1,203 @@
 html {
   font-family: Tahoma;
-  background: linear-gradient(90deg, #0d47a1, #9b49a3);
+  background-color: #002199;
   color: white;
-}
-
-* {
-  box-sizing: border;
+  margin: 0;
+  text-align: center;
 }
 
 body {
-
+ margin: 0;
 }
 
 h1 {
   font-weight: 800;
+  font-size: 70px;
+  text-shadow: 5px 5px black;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 50px;
+  margin-left: 20px;
+  text-shadow: 5px 5px black;
+  text-align: left;
+}
+
+p {
+   text-shadow: 3px 3px black;
 }
 
 a:link {
   color: white;
+  text-shadow: 3px 3px black;
+  text-decoration: none;
 } 
 
 a:visited {
-  color: black;
+  color: #F7ef8a;
+}
+
+a:hover {
+  color: #F7ef8a;
 }
 
 ul {
   display: block;
 }
 
+footer {
+  background-color: black;
+  margin-top: 0;
+  padding: 30px;
+}
+
+.bold {
+  font-weight: 800;
+}
+
+.main {
+  margin-top: 50px;
+  margin-bottom: 0;
+}
+
+.projects {
+  font-size: 20px;
+}
+
 #navbar {
-padding: 40px;
+padding: 20px;
 width: 100%;
 font-size: 20px;
-background-image: url("https://preview.redd.it/p1393jl5kv141.jpg?auto=webp&s=06f3b632408d9f356d15934736a1a12be0601a4c");
+background: linear-gradient(180deg, black, #002199);
+font-size: 40px;
+position: fixed;
+top: 0; 
+border: none;
+margin: 0px;
 }
 
-#nav-link {
-color: white;
+#welcome-section {
+  padding: 100px;
+  background-color: #002199;
+  border-bottom: 15px dashed black;
+}
+
+#title {
+  font-size: 30px;
+}
+
+#projects {
+  background-image: url(https://blooloop.com/wp-content/uploads/2019/12/Atelier-des-Lumie%CC%80res-Japan-waves-%C2%A9-Culturespaces-_-E.-Spiller-1-1.jpg);
+  margin: 0;
+  padding: 24px 4px;
+  color: white;
+}
+
+#project-tile {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 4rem;
+  width: 100%;
+  justify-content: center;
+
+}
+
+#project-tile a {
+  background-color: white;
+  text-shadow: none;
+  color: #002199;
+  font-size: 20px;
+  padding: 5px;
+  border-radius: 9px;
+}
+
+#project-tile img {
+  width: 100%%;
+  height: 250px;
+  object-fit: cover;
+  padding: -10px;
+  background-color: white;
+  border: 2px solid black;
+}
+
+#about {
+  border-top: 15px dashed black;
+  background-image: url(https://media.architecturaldigest.com/photos/5ba551bb44966b64d8d5fc2b/16:9/w_2560%2Cc_limit/hyper-blue-4.jpg);
+  padding-bottom: 20px;
+}
+
+#language-tile {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+#language-tile img {
+  width: 80%;
+  object-fit: cover;
+  padding: -10px;
+  background-color: white;
+  border: 4px solid white;
+}
+
+#certification {
+  font-size: 25px;
+}
+
+.coffee {
+  height: 250px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10px;
+}
+
+#contact {
+  border-top: 15px solid black;
+  background: linear-gradient(180deg,#002199 ,black);
+  padding-bottom: 10px;
 }
 
 
-<!DOCTYPE html>
+#contact h1 {
+  color: white;
+  padding-top: 50px;
+}
+
+#contact p {
+  font-size: 40px;
+  color: white;
+  margin-top: -30px;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 5rem;
+}
+
+.contact-details img {
+  transition: transform 0.3s ease-out;
+  float:left;
+  margin-right: 4px;
+}
+
+.btn {
+  padding: 0 50px;
+}
+
+
+@media only screen and (max-width: 768px) {
+  * {
+    width=50%;
+  }
+}
+
+form<!DOCTYPE html>
 <html>
   <head>
 <title>My portfolio</title>
@@ -48,51 +205,91 @@ color: white;
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
-<body>
-  <nav id="navbar">
+ 
+ <!-- Navbar -->
+  <body>
+  <header>
+    <nav id="navbar" class="bold">
       <a class="nav-link" href="#projects">Projects</a>
       <a class="nav-link" href="#about">About</a>
   <a class="nav-link" href="#contact">Contact</a>
   </nav>
+</header>
+    
+<!-- Banner -->
+  <main class="main">
+    <div id="welcome-section">
+      <h1>Hello, my name is Greg</h1>
+      <p id="title">and here is my portfolio</p>
+    </div>
 
-  <div id="welcome-section">
-    <h1>Hello, my name is Greg</h1>
-  </div>
+<!-- Portfolio projects -->
 <div id="projects">
-  <h2 id="projects">Projects</h2>
-  <div class="container">
-    <div class="projects"></div>
-    <div class="projects"></div>
-    <div class="projects">
-      <p>
-        <a href="https://codepen.io/reggr0y/pen/MWQWeKa" target="_blank">Survey Form</a>
-        <img href=""/>
+  <h2>Projects</h2>
+  <div id="project-tile">
+    <div>
+      <img src="https://i.imgur.com/0WYlwZ1.png" alt="tribute"/>
+      <p class="projects bold">
+        <a href="https://codepen.io/reggr0y/pen/MWQWeKa" target="_blank">Tribute page</a>
         </p>
     </div>
-    <div class="projects">
-      <p>
-        <a href="https://codepen.io/reggr0y/pen/QWaPoPB" target="_blank">Tribute page</a>
-        <img href=""/>
+    <div>
+      <img src="https://i.imgur.com/vVxRbQQ.png" alt="form"/>
+      <p class="projects bold">
+        <a href="https://codepen.io/reggr0y/pen/QWaPoPB" target="_blank">Form</a>
+        </p>
+    </div>
+    <div>
+      <img src="https://i.imgur.com/KNdR3DF.png" alt="Product landing page"/>
+      <p class="projects bold">
+        <a href="https://codepen.io/reggr0y/pen/rNJGGjm" target="_blank">Product landing page</a>
         </p>
     </div>
   </div>
 </div>
-<div>
-  <h2 id="about">About</h2>
-  <div>
-    <p>I have been learning coding via FreeCodeCamp in April 2022.
-      So far, I know HTML & CSS.
-      More to come. </p>
+    
+<!-- About me part -->
+<div id="about">
+  <h2>About</h2>
+  <div id="title">
+    <p>I have experience in the following languages:</p>
   </div>
-</div>
-<div>
-  <h2 id="contact">Contact</h2>
+  <div id="language-tile">
+      <div>
+      <img src="https://seeklogo.com/images/H/html5-with-wordmark-black-white-logo-A6222B77EC-seeklogo.com.png" alt="html 5 logo"/>
+    </div>
+        <div>
+      <img src="https://seeklogo.com/images/C/css-3-logo-A4E6678598-seeklogo.com.png"/>
+      </div>
+    </div>
   <div>
-    <ul>
-      <li><a href="https://github.com/Reggr0y" target="_blank" id="profile-link"><img src="https://logos-world.net/wp-content/uploads/2020/11/GitHub-Logo.png" alt="Github" width="80"></a></li>
-      <li><a href="https://www.linkedin.com/in/gr%C3%A9gory-wawszyniak-dumont-83836680/" target="_blank" id="profile-link"><img src="https://www.paperlesslabacademy.com/wp-content/uploads/2017/02/linkedin-logo-transparent.png" alt="Linkedin" width="80"></a></li>
+    <p id="title">Check out my certification:</p>
+    <ul id="certification">
+      <li><a href="" target="_blank">Responsive Web Design</a> by FreeCodeCamp</li>
     </ul>
   </div>
 </div>
-</body>
+
+<!-- Contact -->
+<div id="contact">
+  <h2 >Contact</h2>
+  <div>
+    <h1>Do you want to work together?</h1>
+    <p> We can discuss around around a coffee</p>
+    <img class="coffee" src="https://img.freepik.com/free-vector/coffee-stain-ring-set-vector-illustration-drink-stain-stamp-with-round-shape-splash-element-coffee-cup-bottom-circle-effect_253081-687.jpg?w=2000" alt="coffee cup"/>
+  </div>
+    <div class="contact-links">
+      <a class="btn contact-details" href="https://github.com/Reggr0y" target="_blank" id="profile-link"><p><img src="https://rajlab.org/icons/github_white.png" alt="Github" height="80"/>GitHub</p></a>
+      <a href="https://www.linkedin.com/in/gr%C3%A9gory-wawszyniak-dumont-83836680/" target="_blank" class="btn contact-details"><p><img src="https://pnggrid.com/wp-content/uploads/2021/05/linkedin-logo-white-1024x1024.png" alt="Linkedin" height="60">LinkedIn</p></a>
+      <a href="mailto:email@test.com" target="_blank" class="btn contact-details"><p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Aiga_mail_white.svg/1200px-Aiga_mail_white.svg.png" alt="Linkedin" height="60">Email</p></a>
+  </div>
+</div>
+   </main>
+          
+<!-- Contact -->
+ <footer>
+      <p> More to come soon... hopefully.</p> 
+    <p> © Created for freeCodeCamp </p>
+</footer>
+    </body>
 </html>
