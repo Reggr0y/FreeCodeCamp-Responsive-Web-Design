@@ -1,0 +1,58 @@
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+<form id="survey-form">
+ <h1 id="title"> How Deep Is Your Love </h1>
+  <p id="description"> Calvin Harris, fandom form: </p>
+  
+<div id="survey-form">
+  <label for="name" id="name-label" class="labels"> Name: </label> 
+    <div class="right">
+      <input type: "text" id="name" placeholder="How can I call you?" class="input" required> 
+    </div>
+  <br> </br>
+  <label for="email" id="email-label" class="labels"> Email: </label>
+  <div class="right">
+    <input type="email" id="email" class="input" required placeholder="Where can I write to you?">
+  </div>
+  <br> </br>
+  <label for="number" id="number-label" class="labels"> Age: </label>
+<div class="right">
+  <input id="number" class="input" min="1" max="120" type="number" placeholder="How many Springs have you seen?">
+</div>
+<br></br> 
+<label for="food" class="labels"> How deep is your love?</label>
+<div class="right">
+  <select id="dropdown" name="Deep" class="input ">
+    <option disabled value="select"> Select an option </option>
+    <option value="pizza"> the Ocean </option>
+    <option value="salad"> or Devotion  </option>
+    <option value="fried-rice"> Oh yeah </option>
+  </select>
+</div>
+<br> </br>
+
+<label class="labels" for="radio" > Calvin or Harris? </label>
+<ul class="right" style="list-style: none;">
+  <li class="radio"> <input name="radio-buttons" value="1" type="radio"><label> Calvin</label></input> </li>
+  <li class="radio"><input name="radio-buttons" value="2" type="radio"
+ </input><label> Harris</label></li>
+</ul>
+
+<!-- checkbox -->
+<label for="song" class="labels"> What is your favorite song? (check all that apply)</label>
+<ul id="sports" style="list-style: none" class="right" >
+  <li class="checkbox"><label><input type="checkbox" id="summer" value="1"> Summer </label></input></li>
+  <li class="checkbox"><label><input type="checkbox" id="feels" value="2"> Feels </label></input></li>
+  <li class="checkbox"><label><input type="checkbox" id="outside" value="3"> Outside </label></input></li>
+  <li class="checkbox"><label><input type="checkbox" id="feel"value="4"> Feel so close </label></input></li>
+  <li class="checkbox"><label><input type="checkbox" id="blame" value="5"> Blame </label></input></li>
+</ul>
+<!-- comments -->
+<label for="comment" class="labels"> Any Comments? </label>
+<div>
+<textarea name="comment" rows="8" columns="80" class="input right" placeholder="Enter comments here..."></textarea>
+</div>
+<br> </br>
+<button id="submit" type="submit"> Submit </button>
+    </div>
+</form>
